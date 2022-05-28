@@ -13,10 +13,10 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: white;
     width: 325px;
     height: fit-content;
-    justify-content: center;
     margin: 0 auto;
     border-radius: 20px;
 }
