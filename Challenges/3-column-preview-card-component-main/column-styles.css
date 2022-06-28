@@ -33,11 +33,12 @@ body {
 .card {
   width: 33%;
   height: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-  margin: 40% 0 10% 10%;
+  margin: 50% 0 10% 10%;
 }
 
 p {
@@ -47,13 +48,14 @@ p {
 
 button {
   font-family: 'Lexend Deca', sans-serif;
-  /* margin: 30% 10% 40px; */
   padding: 10px 30px;
   border: 2px solid hsl(0, 0%, 95%);
   border-radius: 20px;
-  position: absolute;
   bottom: 40px;
   left: 10%;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  margin: 40px 10% 40px;
 }
 
 .but1{
@@ -68,7 +70,7 @@ button {
 
 .sedans {
   background: no-repeat url(./images/icon-sedans.svg);
-  background-position: 10% 7%;
+  background-position: 10% 10%;
   background-color: hsl(31, 77%, 52%);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -76,7 +78,7 @@ button {
 
 .suvs {
   background: no-repeat url(./images/icon-suvs.svg);
-  background-position: 10% 7%;
+  background-position: 10% 10%;
   background-color: hsl(184, 100%, 22%);
 }
 
@@ -91,7 +93,7 @@ button {
 
 .luxury {
   background: no-repeat url(./images/icon-luxury.svg);
-  background-position: 10% 7%;
+  background-position: 10% 10%;
   background-color: hsl(179, 100%, 13%);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -108,18 +110,33 @@ button {
 
 @media (max-width: 600px) {
   body {
-    height: fit-content;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    }
 
+  h1 {
+  margin: 40% 0 10% 10%;
+  }
+  .sedans {
+    border-radius: unset;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 
+  .luxury {
+    border-radius: unset;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   .container {
     flex-direction: column;
     min-height: 900px;
+    margin-top: 150px;
   }
   .card {
     width: 90%;
     max-width: 300px;
-    height: 33%;
-    max-height: 600px;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
 }
