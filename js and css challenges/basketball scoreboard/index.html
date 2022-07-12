@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Scoreboard</title>
+  <link rel="stylesheet" href="./syles.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h3>HOME</h3>
+      <div class="score" id="home-score-cell">
+        <span id="home-score">0</span>
+      </div>
+      <div class="btns">
+        <button onclick="addOnePointToHome()">+1</button>
+        <button onclick="addTwoPointsToHome()">+2</button>
+        <button onclick="addThreePointsToHome()">+3</button>
+      </div>
+    </div>
+    <div>
+      <h3>GUEST</h3>
+      <div class="score" id="guest-score-cell">
+        <span id="guest-score">0</span>
+      </div>
+      <div class="btns">
+        <button onclick="addOnePointToGuest()">+1</button>
+        <button onclick="addTwoPointsToGuest()">+2</button>
+        <button onclick="addThreePointsToGuest()">+3</button>
+      </div>
+    </div>
+    <button id="new-game" onclick="newGame()">New Game</button>
+  </div>
+  
+  
+</body>
+</html>
