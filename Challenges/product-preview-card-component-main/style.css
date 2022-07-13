@@ -74,6 +74,7 @@ h1, .new-price {
 
 .old-price {
   margin-left: 25px;
+  text-decoration: line-through;
 }
 
 h1 {
