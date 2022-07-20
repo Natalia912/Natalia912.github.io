@@ -60,6 +60,7 @@ header > p {
   border-radius: 2.5%;
   box-shadow: 0 0.5rem 1.3rem var(--grayish-blue);
   border-top: 5px solid;
+  background-color: white;
 }
 
 .card > h2 {
