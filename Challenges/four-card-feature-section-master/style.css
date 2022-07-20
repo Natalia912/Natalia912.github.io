@@ -62,7 +62,7 @@ header > p {
   border-top: 5px solid;
 }
 
-.card > h3 {
+.card > h2 {
   color: var(--very-dark-blue);
   font-size: 1.4rem;
 }
