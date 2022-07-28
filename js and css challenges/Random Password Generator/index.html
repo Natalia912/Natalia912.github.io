@@ -14,8 +14,23 @@
       <h1>Generate a <span>random password</span></h1>
       <p>Never use an insecure password again.</p>
     </header>
-    <label class="psw-leng-label" for="psw-leng">Set password length: </label>
-    <input type="number" min="3" max="20" id="psw-leng" name="psw-leng" value="15">
+    
+    <fieldset>
+      <div class="psw-leng-container">
+        <label class="psw-leng-label" for="psw-leng">Set password length: </label>
+        <input type="number" min="3" max="20" id="psw-leng" name="psw-leng" value="15">
+      </div>
+      <hr>
+      <p class="add">Add or remove symbols and numbers in passwords:</p>
+      <div class="symb-cont">
+        <input type="checkbox" name="symbols" id="symbols" checked>
+        <label for="symbols">Symbols</label>
+      </div>
+      <div class="numb-cont">
+        <input type="checkbox" name="numbers" id="numbers" checked>
+        <label for="numbers">Numbers</label>
+      </div>
+    </fieldset>
     <button class="generate-password" onclick="generatePasswords()">Generate Passwords</button>
     <hr>
     <div class="passwords-container">

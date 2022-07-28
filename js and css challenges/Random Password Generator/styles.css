@@ -30,12 +30,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .container {
   background: var(--container-color);
-  max-width: 550px;
+  max-width: 600px;
   width: 100%;
   padding: 10rem 5rem;
   border-radius: 1.5rem;
@@ -86,7 +85,7 @@ header {
   cursor: pointer;
 }
 
-.psw-leng-label {
+label, fieldset .add  {
   font-family: var(--Inter);
   font-style: normal;
   font-weight: 500;
@@ -129,6 +128,27 @@ hr {
 .one {
   margin-right: 1.5em; 
 }
+
+fieldset {
+  width: 100%;
+  padding: 2em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border: 0.3em dotted var(--background-password-color);
+}
+
+fieldset hr {
+  margin: 2em 0;
+}
+.symb-cont {
+  margin: 1em 0;
+}
+
+
+
+
+
 
 @media (max-width: 550px) {
   .passwords-container {
