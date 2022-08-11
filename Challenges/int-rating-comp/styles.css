@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5em;
+}
+
+p {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 1.5rem;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  color: white;
+  margin: 0.8em 0 0.5em;
+  font-size: 3rem;
+}
+
+.card {
+  background-color: rgb(29, 36, 46);
+  padding: 1.8em;
+  border-radius: 2em;
+  max-width: 350px;
+  width: 100%;
+  min-height: 375px;
+  position: relative;
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  top: 0;
+  left: 0;
+}
+.front.is-active {
+  position: static;
+}
+
+.back {
+  display: none;
+}
+
+.rating-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.cont, span, label {
+  background-color: rgb(37, 47, 57);
+  border-radius: 100px;
+}
+
+.cont {
+  display: inline-block;
+  padding: 1em 1.1em;
+}
+.cont .star {
+  vertical-align: middle;
+}
+
+span, label {
+  font-size: 1.5rem;
+  color: hsl(216deg, 12%, 54%);
+  padding: 0.8em 1.2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.front label:hover {
+  color: white;
+  background-color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+#rate1 {
+  padding: 0.8em 1.3em;
+}
+
+.submit {
+  margin-top: 2em;
+  width: 100%;
+  padding: 1em 0;
+  border-radius: 100px;
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.submit:hover {
+  background-color: white;
+  color: hsl(25deg, 97%, 53%);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.clicked {
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+}
+
+.back {
+  align-items: center;
+}
+.back h2 {
+  color: white;
+  margin-bottom: 0.5em;
+}
+.back p {
+  text-align: center;
+}
+
+.ty-icon {
+  width: 50%;
+  margin-top: 1em;
+}
+
+#rating-el {
+  margin: 1.5em 0 2em;
+  color: hsl(25deg, 97%, 53%);
+  vertical-align: middle;
+  padding: 0.5em 0.8em;
+}/*# sourceMappingURL=styles.css.map */

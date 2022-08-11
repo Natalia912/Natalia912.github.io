@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rating Component</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+    <main class="card" id="card">
+      <div class="card-wrapper">
+        <div class="front is-active">
+          <div class="card-container">
+            <div class="icon cont">
+              <img class="star" src="./images/icon-star.svg" alt="star">
+            </div>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <div class="rating-bar">
+              <div>
+                <input type="checkbox" name="one" id="one" value="1">
+                <label for="one" id="rate1">1</label>
+              </div>
+              <div>
+                <input type="checkbox" name="two" id="two" value="2">
+                <label for="two" id="rate2">2</label>
+              </div>
+              <div>
+                <input type="checkbox" name="three" id="three" value="3">
+                <label for="three" id="rate3">3</label>
+              </div>
+              <div>
+                <input type="checkbox" name="four" id="four" value="4">
+                <label for="four" id="rate4">4</label>
+              </div>
+              <div>
+                <input type="checkbox" name="five" id="five" value="5">
+                <label for="five" id="rate5">5</label>
+              </div>
+            </div>
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+        
+        <div class="back">
+          <img class="ty-icon" src="./images/illustration-thank-you.svg" alt="mobile phone with a card">
+          <span id="rating-el"></span>
+          <h2>Thank you!</h2>
+          <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
