@@ -1,0 +1,179 @@
+@font-face {
+  font-family: cursedTimer;
+  src: url(font/CursedTimerUlil-Aznm.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-family: cursedTimer, sans-serif;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+button {
+  height: 25px;
+  width: 40px;
+  border-radius: 8px 8px 0 0;
+  position: absolute;
+  cursor: pointer;
+ 
+}
+
+
+
+.reset {
+  left: 165px;
+  top: 110px;
+  transform: rotate(-33deg);
+  background-color: rgb(255, 117, 117);
+  border: none;
+}
+
+.start {
+  right: 165px;
+  top: 110px;
+  transform: rotate(33deg);
+  background-color: rgb(117, 255, 117);
+  border: none;
+}
+
+.stop {
+  left: 120px;
+  top: 150px;
+  transform: rotate(-46deg);
+  background-color: rgb(255, 186, 117);
+  border: none;
+}
+
+.clicked {
+  top: 120px;
+  
+}
+
+.clicked-stop {
+ 
+  top: 155px;
+  left: 125px;
+}
+
+.stopwatch-body {
+  width: 400px;
+  height: 400px;
+  background-color: #6d9998;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.stopwatch-display {
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #537982;
+}
+
+.display {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.holder {
+  width: 100px;
+  height: 150px;
+  top: -40px;
+  position: absolute;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.rectangle {
+  width: 100px;
+  height: 30px;
+  background-color: #6d9998;
+  border-radius: 10px 10px 0 0;
+}
+
+.ring {
+  width: 100px;
+  height: 95px;
+  background-color: ghostwhite;
+  border-radius: 50%;
+  border: 10px solid #6d9998;
+  position: absolute;
+  top: 30px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+    height: 90vw;
+    max-width: 600px;
+    max-height: 600px;
+  }
+
+  .stopwatch-body {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .stopwatch-display {
+    max-width: 350px;
+    max-height: 350px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .display {
+    max-width: 300px;
+    max-height: 100px;
+    width: 90%;
+    height: 30%;
+    font-size: 30px;
+  }
+
+  .holder {
+    top: -38vw;
+  }
+
+  .stop-reset {
+    left: 15%;
+    top: 1%;
+  }
+
+  .start {
+    right: 15%;
+    top: 1%;
+  }
+}
