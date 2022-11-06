@@ -5,7 +5,7 @@ const stopBtn = document.getElementById('stop');
 
 let [ms, s, m, h] = [0, 0, 0, 0];
 
-let interval = null;
+let interval = 0;
 
 const timeFunc = () => {
   ms += 1000;
